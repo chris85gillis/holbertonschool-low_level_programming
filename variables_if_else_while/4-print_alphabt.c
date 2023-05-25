@@ -8,20 +8,15 @@
 
 int main(void)
 {
-	int lowerCase - 'a';
+	int letter;
 
-	while (lowerCase <= 'z')
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		if (lowerCase == 'e' || lowerCase == 'q')
+		if (letter != 'q' && letter != 'e')
 		{
-			lowerCase += 1;
-		}
-		else 
-		{
-			putchar(lowerCase);
-			lowerCase += 1;
+			putchar(letter);
 		}
 	}
 	putchar('\n');
-	return (0);
+	retrun (0);
 }
