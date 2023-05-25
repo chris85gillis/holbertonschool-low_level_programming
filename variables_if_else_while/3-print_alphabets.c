@@ -8,13 +8,17 @@
 
 int main(void)
 {
-	for (char c = 'a'; c <= 'z'; c++)
+	int lowerCase = 'a';
+	int upperCase = 'A';
+	while (lowerCase <= 'z')
 	{
-		putchar(c);
+		putchar(lowerCase);
+		lowerCase += 1;
 	}
-	for (char c = 'A'; c <= 'Z'; c++)
+	while (upperCase <= 'Z')
 	{
-		putchar(c);
+		putchar(upperCase);
+		upperCase += 1;
 	}
 	putchar('\n');
 	return (0);
