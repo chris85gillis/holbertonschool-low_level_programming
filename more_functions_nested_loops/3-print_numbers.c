@@ -4,9 +4,9 @@
 
 /**
  *
- * print_numbers - print 0-9
+ * print_numbers - print the numbers from 0 up to 9
  *
- * return: void
+ * Return - the numbers from 0 up to 9
  *
  */
 
