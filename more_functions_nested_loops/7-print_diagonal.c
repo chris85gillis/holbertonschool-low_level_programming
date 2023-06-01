@@ -21,10 +21,12 @@ void print_diagonal(int n)
 		{
 			for (y = 0; y < n; y++)
 			{
-				putchar(32);
+				if (y == i)
+				putchar('\\');
+				else if (y < x)
+				putchar(' ');
 			}
-			putchar(92);
+			putchar('\n');
 		}
-		putchar('\n');
 	}
 }
