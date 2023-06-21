@@ -10,7 +10,7 @@
  * Return: ...
  */
 
-char *string_noncat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0, j = 0, k = 0, l = 0;
 	char *str;
@@ -38,7 +38,7 @@ char *string_noncat(char *s1, char *s2, unsigned int n)
 	while (j < l)
 	{
 		if (j <= i)
-			str[j] = s2[j];
+			str[j] = s1[j];
 		if (j >= i)
 		{
 			str[j] = s2[k];
