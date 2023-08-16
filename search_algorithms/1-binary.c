@@ -1,19 +1,31 @@
 #include <stdio.h>
 
+/**
+ * binary_search - search for value in array.
+ *
+ * @array: point to first elemtn of array.
+ * @size: number of elements in array.
+ * @value: value to search for in array.
+ *
+ * Return: -1. 
+ */
+
 int binary_search(int *array, size_t size, int value)
 {
+	int left = 0;
+        int right = size - 1;
+	int mid;
+	int i;
+
 	if (array == NULL)
 	{
-		return -1;
+		return (-1);
 	}
-
-	int left = 0;
-	int right = size - 1;
 
 	while (left <= right)
 	{
 		printf("Searching in array: ");
-		for (int i = left; i <= right; i++)
+		for (i = left; i <= right; i++)
 		{
 			printf("%d", array[i]);
 			if (i != right)
@@ -23,11 +35,11 @@ int binary_search(int *array, size_t size, int value)
 		}
 		printf("\n");
 
-		int mid = left + (right - left) / 2;
+		mid = left + (right - left) / 2;
 
 		if (array[mid] == value)
 		{
-			return mid;
+			return (mid);
 		}
 
 		if (array[mid] < value)
@@ -40,5 +52,5 @@ int binary_search(int *array, size_t size, int value)
 		}
 	}
 
-	return -1;
+	return (-1);
 }
