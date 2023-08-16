@@ -7,13 +7,13 @@
  * @size: number of elements in array.
  * @value: value to search for in array.
  *
- * Return: -1. 
+ * Return: -1.
  */
 
 int binary_search(int *array, size_t size, int value)
 {
 	int left = 0;
-        int right = size - 1;
+	int right = size - 1;
 	int mid;
 	int i;
 
