@@ -4,7 +4,11 @@
 /**
  * linear_search - impliment linear search algorithm.
  *
- * Return: (-1). 
+ * @array: pointer to the first element of the array.
+ * @size: the number of elements in the array.
+ * @value: the target value to be searched for.
+ *
+ * Return: (-1).
  */
 
 int linear_search(int *array, size_t size, int value)
